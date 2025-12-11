@@ -1,0 +1,297 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Kanit", sans-serif; /*Police d'écriture google fonts*/
+	font-weight: 400;
+	font-style: normal;
+    margin: 0;
+    padding-top: 100px;
+    background-color: #262422;
+    line-height: 1.6;
+}
+
+
+
+/* Header */
+header {
+    position : fixed;
+    text-align: center;
+    top : 0;
+    width : 100%;
+    z-index : 9999;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+	color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #000c78;
+    color: white;
+    text-align: center;
+    position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+}
+
+
+
+/* Style de la nav */
+
+nav {
+    background-color: #0E0D0C;
+    padding: 30px;
+}
+
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+	border-radius: 10px;
+    padding: 8px 20px;
+	background-color: #3E3B37;
+	transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+    margin-top: 15px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+
+/* Style de section */
+section {
+    background-color: #3E3B37;
+	color: #ffffff;
+	text-align: justify;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /*pour faire une ombre */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*pour soulever la section*/
+}
+
+section:hover {
+    transform: translateY(-10px); /*hauteur de "décollage" de la section*/
+    box-shadow: 0 10px 20px rgb(255, 255, 255); /*pour rendre l'ombre plus légère*/
+}
+
+section h2{
+	font-size: 1.5rem;
+}
+
+.center {
+	text-align: center;
+}
+
+/* divers */
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+	color: white;
+}
+
+ul {
+    color : white;
+    padding-left: 1.2rem;
+    margin-left:0;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+video {
+  width: auto;
+  border-radius: 15px;
+}
+
+audio {
+	border-radius: 15px;
+}
+
+.img {
+	border-radius: 20px;
+	max-width: 100%; /* Empêche l'image de déborder */
+    width : 300px;
+}   
+.screen {
+    display : block;
+    margin : auto;
+    margin-bottom : 20px;
+	border-radius: 20px;
+	max-width: 70%; /* Empêche l'image de déborder */
+    justify-content: center;
+}   
+.link {
+    display : inline-block;
+    color: #ff0000;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.link:hover{
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+a {
+	color: #aaaaaa;
+	text-decoration: none;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover{
+	color: #202020;
+	text-decoration: none;
+}
+
+
+
+
+
+/* Styles des badges de validation */
+aside#last {
+    text-align: center;
+    padding: 40px;
+}
+
+aside#last img {
+    margin: 10px;
+    max-width: 100px;
+}
+
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.img-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.img-modal span {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+    .screen {
+        text-align: center;
+        max-width : 100%;
+        height :auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+

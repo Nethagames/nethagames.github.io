@@ -1,0 +1,95 @@
+	<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect technique - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+
+		
+	<!-- Police d'écriture -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+	<!-- Police d'écriture -->
+	
+</head>
+<body>
+
+    <header>
+		<!-- Volet de navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="about-me.html">About Me</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="mods.html">Modding</a></li>
+				<li><a href="inspiration.html">Inspiration</a></li>
+				<li><a href="jams.html">Node Software</a></li>
+				<li><a href="mentions.html">Mentions légales</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <!-- Contenu de la page Aspect technique -->
+	<h2>Mon mod</h2>
+    <section>
+	<p>
+		J'ai découvert le modding assez tard dans mes projets informatiques et vidéo ludiques, il n'y a donc à ce jour un seul projet, mais je trouvais intéressant de le partager car il m'a beaucoup apprit.
+	</p>
+	</section>
+
+	<section>
+		<h2>Map Deathrun - Half Life</h2>
+		<p>
+			Cette map est complète, elle regroupe l'ensemble des mods que j'ai pu intégrer et/ou créer pour le jeu. Vous pouvez la télécharger ici <a href="https://github.com/Nethagames/Map_deathrun_half_life" target="_blank" class="link">cliquez ici</a>
+			<ul>
+				<li> La Map</li>
+				<img src="Contenu/map1.PNG" alt="Map Deathrun - Half Life" class="screen">
+				<img src="Contenu/map2.PNG" alt="Map Deathrun - Half Life" class="screen"><br><br>
+				<li>Armes</li>
+				<p>Pour les armes je suis directement allé télécharger le sdk de de Half Life que j'ai utilisé pour générer les fichiers .dll (code source) afin d'ajouter des slots pour la crowbar afin d'avoir différentes armes de mêlée avec des styles que j'ai adaptés :</p>
+				<img src="Contenu/arme1.PNG" alt="Arme - Half Life" class="screen">
+				<img src="Contenu/arme2.PNG" alt="Arme - Half Life" class="screen">
+				<img src="Contenu/arme3.PNG" alt="Arme - Half Life" class="screen"><br><br>
+				<li>PNJ</li>
+				<p>Pour le pnj, de la même manière que pour les armes, j'aurai pu me contenter de modifier le look d'un pnj déjà existant mais pour des raisons pratiques, j'en ai créé un de 0, de cette manière je l'ai rendu intuable, l'intéraction est unique et il ne peut pas se déplacer.</p>
+				<img src="Contenu/pnj1.PNG" alt="PNJ - Half Life" class="screen"><br><br>
+				<li>Modification de la physique</li>
+				<p>Pour modifier la physique et la logique du jeu, j'ai du encore utiliser le sdk de de Half Life. Je me suis directement attaqué au code source donc pour, comme mentionné plus tôt rajouter des slots d'armes inexistants, rendre le joueur invincible (éviter les dégâts de chute), enlever des sons à des items, ou ajouter des events listeners<br>
+				par exemple si l'on intéragit avec le pnj créé une musique personnalisé se déclenche</p>
+			</ul>
+		</p>
+	</section>
+
+	<section>
+		<h2>Mod Minecraft</h2>
+		<p>
+			Encore en projet, ce mod aura pour but d'ajouter au jeu un item craftable et portable afin d'agrandir son inventaire.
+	</section>
+	
+<!-- Validation -->
+	<aside id="last">
+        <hr>
+        <p>Validation de la page HTML5 - CSS3</p>
+        <a href="https://validator.w3.org/nu/?doc=http://vogt.atwebpages.com/SAe14/index.html"> 
+            <img class="image-responsive" src="Contenu/html5-validator-badge-blue.png" alt="HTML5 Valide !" width="85" height="31">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://vogt.atwebpages.com/SAe14/index.html">
+            <img class="image-responsive" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !">
+        </a>
+    </aside>
+<!-- Validation -->
+
+    <footer>
+        <p style="color:white;">&copy; 2025 Bendrell Nathan</p>
+    </footer>
+	
+	<div id="img-modal" class="img-modal">
+  		<span id="close-modal">&times;</span>
+  		<img id="modal-img" src="" alt="Agrandissement">
+	</div>
+
+</body>
+</html>
